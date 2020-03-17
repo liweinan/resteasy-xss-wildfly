@@ -19,6 +19,23 @@
         </license>
     </licenses>
 
+    <properties>
+        <resteasy.ver>4.5.2.Final</resteasy.ver>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-core</artifactId>
+            <version>${resteasy.ver}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-servlet-initializer</artifactId>
+            <version>${resteasy.ver}</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <finalName>resteasy-xss-wildfly</finalName>
         <plugins>
@@ -32,17 +49,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <properties>
-        <resteasy.ver>4.5.2.Final</resteasy.ver>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-core</artifactId>
-            <version>${resteasy.ver}</version>
-        </dependency>
-    </dependencies>
-
 </project>
