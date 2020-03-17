@@ -20,6 +20,7 @@
     </licenses>
 
     <build>
+        <finalName>resteasy-xss-wildfly</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -41,7 +42,7 @@
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-core</artifactId>
             <version>${resteasy.ver}</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
+
 </project>
